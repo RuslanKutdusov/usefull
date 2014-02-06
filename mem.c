@@ -4,6 +4,8 @@
 #include <execinfo.h>
 
 // http://habrahabr.ru/post/199090/
+// using:
+// LD_PRELOAD=./mem.so ./some_app
 
 //
 static void* ( *malloc_orig )( size_t size ) = NULL;
